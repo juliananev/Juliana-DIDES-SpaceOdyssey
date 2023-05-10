@@ -191,14 +191,14 @@ p{
   
     }
     
-    .odyssey p{
+     .odyssey p{
         position: relative;
         margin: 2vw;
         margin-top: 0vw;
-        font-size: 18vw;
+        font-size: 19vw;
         z-index: 3;
         font-weight: 200;
-        line-height: 19vw;
+        line-height: 18vw;
         -webkit-text-stroke: 0.2vw
     }
 
