@@ -1,0 +1,202 @@
+body{
+    background-color: black;
+    cursor: url(‘cursor.png’), auto;
+}
+
+p{
+    color: #00e792;
+    position: absolute;
+    font-family: 'Big Shoulders Text';
+}
+
+
+
+.year p{
+    margin-top: 15vw;
+    margin-left: 10vw;
+    font-size: 20vw;
+    z-index: 3;
+    font-weight: 200;
+    opacity: 0;
+    animation: 4s opacity ease-out forwards;
+}
+
+
+.odyssey p{
+    margin-top: -30vw;
+    margin-left: 59vw;
+    font-size: 11vw;
+    z-index: 3;
+    font-weight: 200;
+    line-height: 11vw;
+    opacity: 0;
+    -webkit-text-stroke: 0.1vw #00e792;
+    animation: 4s opacity ease-out forwards;
+}
+
+@keyframes opacity {
+    0% {
+      opacity: 0;
+      
+    }
+    
+    100% {
+      opacity: 1;
+      
+    }
+  }
+
+.quote p{
+    font-family: 'Poppins';
+    text-transform: uppercase;
+    margin: 2vw;
+    font-size: 1vw;
+    letter-spacing: 0.1vw;
+    opacity: 0;
+    animation: 1s blend-in ease-out forwards;
+    animation-delay: 2s;
+}
+@keyframes blend-in {
+    0% {
+      opacity: 0;
+      
+    }
+    
+    100% {
+      opacity: 1;
+      
+    }
+  }
+
+.director p{
+    font-family: 'Poppins';
+    text-transform: uppercase;
+    text-align: right;
+    position: relative;
+    margin: 2vw;
+    margin-top: 2vw;
+    font-size: 1vw;
+    letter-spacing: 0.1vw;
+    opacity: 0;
+    animation: 1s blend-in ease-out forwards ;
+    animation-delay: 2s;
+}
+
+
+.pinkimg {
+    position: absolute;
+    margin-top: -1vw;
+    width: 96vw;
+    z-index: 1;
+}
+
+.eyeimg {
+    position: absolute;
+    margin-top: -1vw;
+    width: 96vw;
+    z-index: 2;
+    animation: rotation 120s infinite linear;
+    
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(359deg);
+    }
+}
+
+.lines img{
+    margin: 2vw;
+    margin-top:9.5vw ;
+    height: 34vw;
+}
+
+.pinkimg2{
+    display: none;
+}
+.director2{
+    display: none;
+}
+@media screen and (max-width: 500px) {
+    .line-right{
+        display: none;
+    }
+    .pinkimg{
+        display: none;
+    }
+    .director{
+        display: none;
+    }
+    section{
+        position: absolute;
+        overflow: hidden;
+        width: 100%;
+        height: 216.2vw;
+        margin: -2vw;
+    }
+
+    .pinkimg2 {
+        display:block;
+        position: relative;
+        margin-top: 0vw;
+        margin-left: 17vw;
+        width: 114vw;
+        z-index: 1;
+    }
+    
+
+    .eyeimg {
+        margin-top: 40vw;
+        margin-left: -43vw;
+        width: 233vw;
+    }
+
+    .lines img{
+        margin: 2vw;
+        margin-top: 54.5vw;
+        height: 101vw;
+    }
+
+    .quote p{
+        margin: 2vw;
+        font-size: 2.6vw;
+        letter-spacing: 0.1vw;
+    }
+    .director2{
+        display: block;
+    }
+    
+    .director2 p{
+        font-family: 'Poppins';
+        text-transform: uppercase;
+        position: relative;
+        margin: 2vw;
+        font-size: 2.6vw;
+        letter-spacing: 0.1vw;
+        opacity: 0;
+    animation: 1s blend-in ease-out forwards;
+    animation-delay: 2s;
+    }
+
+    .year p{
+        margin-top: 9vw;
+        margin-left: 2vw;
+        font-size: 36vw;
+  
+    }
+    
+    .odyssey p{
+        position: relative;
+        margin: 2vw;
+        margin-top: 4vw;
+        font-size: 19vw;
+        z-index: 3;
+        font-weight: 200;
+        line-height: 19vw;
+        -webkit-text-stroke: 0.2vw #00e792;
+    }
+}
